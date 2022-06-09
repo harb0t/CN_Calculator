@@ -19,6 +19,7 @@ const calculate = (button) => {
   setInput(input + button);
 };
 
+
 const handleClick = (e) => {
   const display = e.target.textContent;
   calculate(display);
@@ -27,7 +28,8 @@ const handleClick = (e) => {
 
   return ( <div className ="App">
     <h1>Calc</h1>
-    <hs>{input}</hs>
+    <hs>{input}</hs> 
+    {/* Whats this? */}
     <Operators handleClick={handleClick} />
     <Numbers handleClick={handleClick}  />
     </div> );
