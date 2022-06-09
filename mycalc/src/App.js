@@ -27,7 +27,8 @@ const handleClick = (e) => {
 }
 
   return ( <div className ="App">
-    <h1>Calc</h1>
+    <h1>My Calculator</h1>
+    <h2 data-testid="display">{input}</h2>
     <hs>{input}</hs> 
     {/* Whats this? */}
     <Operators handleClick={handleClick} />
